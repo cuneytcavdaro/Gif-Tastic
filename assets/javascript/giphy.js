@@ -9,7 +9,7 @@ function displayCars(){
     method: "GET"
   })
     .then(function(respond) {
-        // $("#car").html(JSON.parse(respond))
+      
       var results = respond.data;
       for (var i = 0; i < results.length; i++) {
         var gifDiv = $('<div>');
